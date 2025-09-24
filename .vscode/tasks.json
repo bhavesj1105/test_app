@@ -1,0 +1,59 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Expo: Start",
+			"type": "shell",
+			"command": "npx expo start",
+			"options": {
+				"cwd": "${workspaceFolder}/bakbak-mobile"
+			},
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Expo: Android",
+			"type": "shell",
+			"command": "npx expo start --android",
+			"options": {
+				"cwd": "${workspaceFolder}/bakbak-mobile"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Expo: iOS",
+			"type": "shell",
+			"command": "npx expo start --ios",
+			"options": {
+				"cwd": "${workspaceFolder}/bakbak-mobile"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Expo: Web",
+			"type": "shell",
+			"command": "npx expo start --web",
+			"options": {
+				"cwd": "${workspaceFolder}/bakbak-mobile"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Expo: Start",
+			"type": "shell",
+			"command": "npx expo start"
+		},
+		{
+			"label": "Expo: Start (offline)",
+			"type": "shell",
+			"command": "export",
+			"args": [
+				"EXPO_OFFLINE=1",
+				"npx",
+				"expo",
+				"start"
+			],
+			"group": "build"
+		}
+	]
+}
